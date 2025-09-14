@@ -1,0 +1,50 @@
+:root {
+    --verde-esmeralda: #2E8B57;
+    --amarillo-mostaza: #FFD700;
+}
+
+/* HEADER */
+header {
+    flex-shrink: 0;
+}
+
+.navbar {
+    background-color: var(--verde-esmeralda) !important;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--amarillo-mostaza) !important;
+}
+
+/* Ajuste para el contenido principal debido al navbar fijo */
+main {
+    padding-top: 80px;
+}
+
+/* Responsividad para el navbar */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    main {
+        padding-top: 70px;
+    }
+}
+
